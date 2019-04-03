@@ -8,4 +8,5 @@ dockerBuildPipeline {
         name = "loftsman-helm"
         description = "Loftsman Helm"
         useEntryPointForTest = "false"
+        dockerArguments = "--build-arg loftsman_docker_kubectl_image_version=0.0.1 --build-arg helm_version=2.13.1"
 }
