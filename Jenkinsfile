@@ -1,9 +1,7 @@
 @Library('dst-shared@master') _
 
 dockerBuildPipeline {
-        repository = "anajjar"
-        masterBranch = "feature/build-pipeline"
-        imagePrefix = "loftsman"
+        repository = "loftsman"
         app = "helm"
         name = "loftsman-helm"
         description = "Loftsman Helm"
