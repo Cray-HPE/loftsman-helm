@@ -22,7 +22,7 @@ else
   export LOFTSMAN_CHART_REPO="$(cat /loftsman/config/charts.repo)"
   # If helm init hasn't occured, do a `helm init --client-only`
   # This is mostly for the adhoc calls
-  if [ ! -d mkdir -p $HOME/.helm/repository ]; then
+  if [ ! -d $HOME/.helm/repository ]; then
     source client-helm-init
   fi
   $helm $@
