@@ -20,3 +20,7 @@ COPY ./bin/helmet.sh /usr/local/bin/helmet
 RUN chmod +x /usr/local/bin/helmet
 COPY ./bin/install-helm.sh /usr/local/bin/install-helm
 RUN chmod +x /usr/local/bin/install-helm
+COPY ./bin/client-helm-init.sh /usr/local/bin/client-helm-init
+RUN chmod +x /usr/local/bin/client-helm-init
+COPY ./bin/helm-init-hack.sh /usr/local/bin/helm-init-hack
+RUN chmod +x /usr/local/bin/helm-init-hack
